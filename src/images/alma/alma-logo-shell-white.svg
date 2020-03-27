@@ -1,0 +1,13 @@
+<svg width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Artboard1" transform="matrix(0.467451,0,0,0.471657,1.85755,1.45507)">
+        <rect x="-3.974" y="-3.085" width="136.913" height="135.692" style="fill:none;"/>
+        <g id="Main-Alma-Shell---Grey" serif:id="Main Alma Shell - Grey" transform="matrix(1.04153,0,0,1.03225,-2.513,2.41025)">
+            <g transform="matrix(0.72956,0,0,0.72956,65,1)">
+                <path d="M23,8C20,3 15,-1 3,0C18,25 2,79 0,117L0,129C2,152 19,163 38,163C61,163 67,141 66,134C65,122 55,118 49,118C42,118 36,122 36,130C36,138 42,144 53,143C37,146 32,135 32,129C32,120 40,113 48,113C55,113 60,117 66,123C77,120 86,106 87,95C88,88 86,76 79,72C78,86 70,100 57,104C63,99 75,91 76,66C77,50 66,40 57,39C63,57 50,84 37,93C47,82 51,72 53,57C56,43 53,32 47,23C44,18 36,14 31,14C39,35 32,63 22,79C34,45 31,20 23,8Z" style="fill:white;fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(0.72956,0,0,0.72956,0,1)">
+                <path d="M85,0C77,-1 68,3 64,8C56,20 53,45 65,79C55,63 48,35 56,14C51,14 44,18 40,23C34,32 31,43 34,57C37,72 40,82 50,93C37,84 24,57 30,39C21,40 10,50 11,66C13,91 24,99 30,104C17,100 9,86 9,72C1,76 0,88 0,95C1,106 10,120 21,123C28,117 32,113 39,113C47,113 55,120 55,129C55,135 50,146 35,143C45,144 51,138 51,130C51,122 45,118 39,118C32,118 22,122 21,134C20,141 26,163 50,163C69,163 88,151 88,125C88,86 68,27 85,0Z" style="fill:white;fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

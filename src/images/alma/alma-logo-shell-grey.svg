@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1" clip-rule="evenodd" version="1" viewBox="0 0 129 120">
+  <g serif:id="Main Alma Shell - Grey">
+    <path fill="none" d="M0 0h129v119H0z"/>
+    <path fill="url(#_Linear1)" fill-rule="nonzero" d="M23 8c-3-5-8-9-20-8 15 25-1 79-3 117v12c2 23 19 34 38 34 23 0 29-22 28-29-1-12-11-16-17-16-7 0-13 4-13 12s6 14 17 13c-16 3-21-8-21-14 0-9 8-16 16-16 7 0 12 4 18 10 11-3 20-17 21-28 1-7-1-19-8-23-1 14-9 28-22 32 6-5 18-13 19-38 1-16-10-26-19-27 6 18-7 45-20 54 10-11 14-21 16-36 3-14 0-25-6-34-3-5-11-9-16-9 8 21 1 49-9 65 12-34 9-59 1-71z" transform="translate(65 1) scale(.72956)"/>
+    <path fill="url(#_Linear2)" fill-rule="nonzero" d="M85 0c-8-1-17 3-21 8-8 12-11 37 1 71-10-16-17-44-9-65-5 0-12 4-16 9-6 9-9 20-6 34 3 15 6 25 16 36-13-9-26-36-20-54-9 1-20 11-19 27 2 25 13 33 19 38-13-4-21-18-21-32-8 4-9 16-9 23 1 11 10 25 21 28 7-6 11-10 18-10 8 0 16 7 16 16 0 6-5 17-20 14 10 1 16-5 16-13s-6-12-12-12c-7 0-17 4-18 16-1 7 5 29 29 29 19 0 38-12 38-38 0-39-20-98-3-125z" transform="translate(0 1) scale(.72956)"/>
+  </g>
+  <defs>
+    <linearGradient id="_Linear1" x2="1" gradientTransform="matrix(-33.6365 160.985 -160.985 -33.6364 56 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e7e7e7"/>
+      <stop offset="1" stop-color="silver"/>
+    </linearGradient>
+    <linearGradient id="_Linear2" x2="1" gradientTransform="matrix(47.0098 160.194 -298.188 87.5051 18 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e7e7e7"/>
+      <stop offset="1" stop-color="silver"/>
+    </linearGradient>
+  </defs>
+</svg>

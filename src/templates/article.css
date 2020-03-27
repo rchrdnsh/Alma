@@ -1,0 +1,81 @@
+p {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  color: #006897;
+  font-family: 'Work Sans', 'DM Serif Display', 'Lato';
+  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(24px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
+  /* background: -webkit-linear-gradient(#006674, #004566);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+  @media screen and (min-width: 50rem) {
+    p {
+      font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+      line-height: calc(24px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
+    }  
+  }
+
+ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  /* border: 1px solid black; */
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  /* border: 1px solid black; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li ul {
+  margin: 0;
+  padding: 0;
+  /* padding-left: 16px; */
+}
+
+li ul li {
+  padding-left: 16px;
+  /* font-size: calc(1rem - 0.1rem); */
+}
+
+li ul li {
+  color: blue;
+}
+
+/* h2 {
+  color: green;
+} */
+
+  ul li a {
+    color: blue;
+  }
+
+  ul li ul li a {
+    color: green;
+  }
+
+  ul li ul li ul li a {
+    color: coral;
+  }
+
+  ul li ul li ul li ul li a {
+    color: black;
+  }
+
+  ul li ul li ul li ul li ul li a {
+    color: grey;
+  }
+
+  ul li ul li ul li ul li ul li ul li a {
+    color: purple;
+}
