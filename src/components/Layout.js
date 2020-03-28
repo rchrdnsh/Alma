@@ -56,7 +56,7 @@ import Navigation from './navigation/Navigation'
 //   color: #006897;
 // `
 
-const App = styled(motion.div)`
+const App = styled.div`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -366,13 +366,13 @@ const Layout = ({ children, location: { pathname, hash } }) => {
     <>
       {/* { visible && <AnimatedLogo/> } */}
       <App
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          ease: 'easeInOut',
-          duration: 0.5,
-          delay: 0
-        }}
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // transition={{
+        //   ease: 'easeInOut',
+        //   duration: 0.5,
+        //   delay: 0
+        // }}
       >
         <AlmaLogo
           src={almaLogo}
