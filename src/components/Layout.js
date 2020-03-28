@@ -65,7 +65,7 @@ const ShellBox = styled.div`
   bottom: 0;
   height: 100vh;
   width: 100vw;
-  height: calc(var(--vh, 1vh) * 100);
+  /* height: calc(var(--vh, 1vh) * 100); */
   margin: 0;
   padding: 0;
   display: grid;
@@ -146,6 +146,7 @@ const Main = styled.main`
 
 const AlmaShell = styled.img`
   margin: 0;
+  margin-top: -4rem;
   padding: 0;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
