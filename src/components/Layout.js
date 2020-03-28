@@ -354,11 +354,11 @@ const Layout = ({ children, location: { pathname, hash } }) => {
     }
   }, [hash, pathname])
 
-  const [ visible, setVisible] = useState(true)
+  // const [ visible, setVisible] = useState(true)
 
-  useEffect(() => {
-    setTimeout(() => setVisible(false), 5000)
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setVisible(false), 5000)
+  // }, []);
 
 
   return (
