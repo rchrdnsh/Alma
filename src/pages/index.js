@@ -736,11 +736,11 @@ const Index = ({ data }) => {
           loop
           muted
           autoPlay
-          poster={resort4}>
-            <source
-              src={resortVideo}
-              type="video/mp4"
-            />
+        >
+          <source
+            src={resortVideo}
+            type="video/mp4"
+          />
         </Video>
         <Arrow/>
       </Box>
