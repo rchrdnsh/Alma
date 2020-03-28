@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { motion, AnimatePresence } from 'framer-motion'
+// import { motion, AnimatePresence } from 'framer-motion'
 
-const Container = styled(motion.div)`
+// const Container = styled(motion.div)`
+const Container = styled.div`
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -25,35 +26,36 @@ const Container = styled(motion.div)`
   };
 `
 
-const Content = (props) => {
+const Content = ({children}) => {
 
   // Need to add conditionals that stop the animation when langauge is changed
   
   return (
-    <AnimatePresence exitBeforeEnter>
-      <Container
-        {...props}
-        initial={{
-          opacity: 0
-        }}
-        animate={{
-          opacity: 1,
-          transition: { 
-            delay: 0.5,
-            duration: 0.5
-          }
-        }}
-        exit={{
-          opacity: 0,
-          transition: { 
-            delay: 0,
-            duration: 0.5
-          }
-        }}
-      >
-        {props.children}
+    // <AnimatePresence exitBeforeEnter>
+    //   <Container
+    //     {...props}
+    //     initial={{
+    //       opacity: 0
+    //     }}
+    //     animate={{
+    //       opacity: 1,
+    //       transition: { 
+    //         delay: 0.5,
+    //         duration: 0.5
+    //       }
+    //     }}
+    //     exit={{
+    //       opacity: 0,
+    //       transition: { 
+    //         delay: 0,
+    //         duration: 0.5
+    //       }
+    //     }}
+    //   >
+      <Container>
+        {children}
       </Container>
-    </AnimatePresence>
+    // </AnimatePresence>
   )
 }
 

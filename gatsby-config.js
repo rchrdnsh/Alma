@@ -5,6 +5,7 @@ module.exports = {
     author: `Arrow GTP`
   },
   plugins: [
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
