@@ -729,7 +729,7 @@ const Index = ({ data }) => {
         <Caption large>Actual Image</Caption>
         <Watermark large/> */}
         <Scrimm/>
-        <Video height="100%" width="100%" loop muted autoPlay poster={resort4}>
+        <Video height="100%" width="100%" loop muted autoPlay playsinline poster={resort4}>
           <source src={resortVideo} type="video/mp4"/>
         </Video>
         <Arrow/>
