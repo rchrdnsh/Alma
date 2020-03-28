@@ -730,12 +730,8 @@ const Index = ({ data }) => {
         <Watermark large/>
         <Scrimm/>
         <Video
-          autoplay
           autoPlay
-          playsinline
           playsInline
-          height="100%"
-          width="100%"
           loop
           muted
         >
