@@ -17,7 +17,7 @@ import { Button } from '../components/Button'
 
 import almaLogoWithBG from '../images/alma/alma-logo-with-bg.svg'
 
-import resortVideo from '../videos/alma-resort-2-05.mp4'
+import resortVideo from '../videos/alma-resort-1-minute.mp4'
 
 import Arrow from '../components/Arrow'
 
@@ -730,15 +730,12 @@ const Index = ({ data }) => {
         <Watermark large/>
         <Scrimm/>
         <Video
-          autoPlay
           playsInline
-          loop
+          autoPlay
           muted
+          loop
         >
-          <source
-            src={resortVideo}
-            type="video/mp4"
-          />
+          <source src={resortVideo} type="video/mp4"/>
         </Video>
         <Arrow/>
       </Box>
