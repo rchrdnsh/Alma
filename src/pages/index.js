@@ -44,7 +44,7 @@ const Scrimm = styled.div`
   justify-self: stretch;
   object-fit: cover;
   /* background: hsla(0,0%,0%,0.25); */
-  background-image: linear-gradient(to bottom, hsla(30, 73%, 60%, 0.2) 0%, hsla(199, 45%, 44%, 0.5) 100%);
+  background-image: linear-gradient(to bottom, hsla(30, 73%, 60%, 0.3) 0%, hsla(199, 45%, 44%, 0.6) 100%);
 `
 
 const Logo = styled.img`

@@ -84,13 +84,14 @@ const ShellBox = styled.div`
 `
 
 const App = styled.div`
-  z-index: 2;
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
+  opacity: 0;
   height: calc(var(--vh, 1vh) * 100);
-  animation: fadeIn ease 3s;
+  animation: fadeInApp ease 2s;
+  animation-delay: 2s;
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
   display: grid;
@@ -102,12 +103,12 @@ const App = styled.div`
   ;
   grid-template-columns: repeat(3, 1fr);
 
-  @keyframes fadeIn {
+  @keyframes fadeInApp {
     0% {
-      opacity:0;
+      opacity: 0;
     }
     100% {
-      opacity:1;
+      opacity: 1;
     }
   }
 
@@ -155,7 +156,20 @@ const AlmaShell = styled.img`
   width: 6rem;
   height: auto;
   z-index: 0;
-  opacity: 0.5;
+  opacity: 0;
+  animation: fadeInShell ease 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
+
+  @keyframes fadeInShell {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `
 
 const AlmaLogo = styled.img`
