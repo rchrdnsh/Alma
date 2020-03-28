@@ -725,9 +725,9 @@ const Index = ({ data }) => {
       <Box featured>
         <Logo src={almaLogoWithBG} alt="The Alma Resort Logo."/>
         <Slogan>{t({ id: 'slogan' })}</Slogan>
-        {/* <Image grid fluid={data.resort1.childImageSharp.fluid}/>
+        <Image grid fluid={data.resort1.childImageSharp.fluid}/>
         <Caption large>Actual Image</Caption>
-        <Watermark large/> */}
+        <Watermark large/>
         <Scrimm/>
         <Video
           playsInline
