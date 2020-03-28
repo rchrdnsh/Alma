@@ -1,5 +1,5 @@
-// import React, { useEffect, useState } from 'react'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+// import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
@@ -12,7 +12,7 @@ import almaLogo from '../images/alma/alma-logo.svg'
 
 import './Layout.css'
 
-// import AnimatedLogo from './AnimatedLogo'
+import AnimatedLogo from './AnimatedLogo'
 
 import Logo from './Logo'
 import Navigation from './navigation/Navigation'
@@ -354,17 +354,17 @@ const Layout = ({ children, location: { pathname, hash } }) => {
     }
   }, [hash, pathname])
 
-  // const [ visible, setVisible] = useState(true)
+  const [ visible, setVisible] = useState(true)
 
-  // useEffect(() => {
-  //   setTimeout(() => setVisible(false), 5000)
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => setVisible(false), 5000)
+  }, []);
 
 
   return (
 
     <>
-      {/* { visible && <AnimatedLogo/> } */}
+      { visible && <AnimatedLogo/> }
       <App
         // initial={{ opacity: 0 }}
         // animate={{ opacity: 1 }}
