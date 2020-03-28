@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+// import { Transition } from 'react-transition-group'
 // import { motion, AnimatePresence } from 'framer-motion'
+
+// const duration = 1000;
+
+// const defaultStyle = {
+//   transition: `opacity ${duration}ms ease-in-out`,
+//   opacity: 0,
+// }
+
+// const transitionStyles = {
+//   entering: { opacity: 1 },
+//   entered:  { opacity: 1 },
+//   exiting:  { opacity: 0 },
+//   exited:  { opacity: 0 },
+// };
+
 
 // const Container = styled(motion.div)`
 const Container = styled.div`
@@ -26,11 +42,22 @@ const Container = styled.div`
   };
 `
 
-const Content = ({children}) => {
+const Content = (props) => {
 
+  // const [inProp, setInProp] = useState(false);
   // Need to add conditionals that stop the animation when langauge is changed
   
   return (
+    // <Transition in={inProp} timeout={duration}>
+    //   {state => (
+    //     <Container {...props} style={{
+    //       ...defaultStyle,
+    //       ...transitionStyles[state]
+    //     }}>
+    //       {props.children}
+    //     </Container>
+    //   )}
+    // </Transition>
     // <AnimatePresence exitBeforeEnter>
     //   <Container
     //     {...props}
@@ -52,8 +79,8 @@ const Content = ({children}) => {
     //       }
     //     }}
     //   >
-      <Container>
-        {children}
+      <Container {...props}>
+        {props.children}
       </Container>
     // </AnimatePresence>
   )

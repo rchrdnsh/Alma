@@ -42,7 +42,7 @@ const Arrow = () => {
           transition={{ from: 0, flip: Infinity, duration: 1.5 }}
         >
           <svg width="50" height="25" viewBox="-3.5 -4 24 24" preserveAspectRatio="xMidYMid meet">
-            <path d="M0,0 l8,10 l8,-10" fill="none" stroke="white" stroke-linecap="round" stroke-width="2" />
+            <path d="M0,0 l8,10 l8,-10" fill="none" stroke="white" strokeLinecap="round" strokeWidth="2" />
           </svg>
         </AnimatedArrow>
     </>

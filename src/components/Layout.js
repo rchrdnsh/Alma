@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 import almaLogo from '../images/alma/alma-logo.svg'
+import almaShell from '../images/alma/alma-shell.svg'
 
 // import PromoCruise from '../images/promos/promo-cruise-wide.jpg'
 // import PromoVegas from '../images/promos/promo-vegas-wide.jpg'
@@ -12,7 +13,7 @@ import almaLogo from '../images/alma/alma-logo.svg'
 
 import './Layout.css'
 
-import AnimatedLogo from './AnimatedLogo'
+// import AnimatedLogo from './AnimatedLogo'
 
 import Logo from './Logo'
 import Navigation from './navigation/Navigation'
@@ -56,13 +57,42 @@ import Navigation from './navigation/Navigation'
 //   color: #006897;
 // `
 
+const ShellBox = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 1;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  background: white;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+CjxyZWN0IHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgZmlsbD0iI2ZmZmZmZiI+PC9yZWN0Pgo8cmVjdCB4PSIxNSIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjZmRmZGZkIj48L3JlY3Q+Cjwvc3ZnPg==");
+  background-repeat: repeat;
+
+  @media (orientation: landscape) {
+    height: 100vh;
+  }
+`
+
 const App = styled.div`
-  box-sizing: border-box;
+  z-index: 2;
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
   display: grid;
   grid-template-rows: 20vh 70vh 10vh;
   grid-template-rows:
@@ -71,7 +101,15 @@ const App = styled.div`
     calc(var(--vh, 1vh) * 10)
   ;
   grid-template-columns: repeat(3, 1fr);
-  z-index: 2;
+
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
 
   @media (orientation: landscape) {
     grid-template-rows: 100vh;
@@ -106,14 +144,27 @@ const Main = styled.main`
   }
 `
 
-const AlmaLogo = styled(motion.img)`
+const AlmaShell = styled.img`
+  margin: 0;
+  padding: 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: center;
+  justify-self: center;
+  width: 6rem;
+  height: auto;
+  z-index: 0;
+  opacity: 0.5;
+`
+
+const AlmaLogo = styled.img`
   margin: 0;
   padding: 0;
   grid-column: 1 / 4;
   grid-row: 1 / 3;
   align-self: center;
   justify-self: center;
-  width: 12rem;
+  width: 8rem;
   height: auto;
   z-index: 0;
   opacity: 0.5;
@@ -364,6 +415,9 @@ const Layout = ({ children, location: { pathname, hash } }) => {
   return (
 
     <>
+      <ShellBox>
+        <AlmaShell src={almaShell} alt='The Alma Shell Logo'/>
+      </ShellBox>
       {/* { visible && <AnimatedLogo/> } */}
       <App
         // initial={{ opacity: 0 }}
@@ -377,13 +431,13 @@ const Layout = ({ children, location: { pathname, hash } }) => {
         <AlmaLogo
           src={almaLogo}
           alt='The Alma Logo'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            ease: 'easeInOut',
-            duration: 2,
-            delay: 2
-          }}
+          // initial={{ opacity: 0 }}
+          // animate={{ opacity: 1 }}
+          // transition={{
+          //   ease: 'easeInOut',
+          //   duration: 2,
+          //   delay: 2
+          // }}
         />
         <Menu>
           <Logo/>
