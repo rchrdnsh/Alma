@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-// import React, { useEffect } from 'react'
+// import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
@@ -364,7 +364,7 @@ const Layout = ({ children, location: { pathname, hash } }) => {
   return (
 
     <>
-      { visible && <AnimatedLogo/> }
+      {/* { visible && <AnimatedLogo/> } */}
       <App
         // initial={{ opacity: 0 }}
         // animate={{ opacity: 1 }}
