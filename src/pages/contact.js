@@ -5,8 +5,6 @@ import { graphql } from 'gatsby'
 import { injectIntl } from 'gatsby-plugin-intl'
 import Img from 'gatsby-image'
 
-// import SEO from '../components/seo'
-
 import Content from '../components/Content'
 import { Button } from '../components/Button'
 

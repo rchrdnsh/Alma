@@ -4,7 +4,6 @@ import { Link, injectIntl } from 'gatsby-plugin-intl'
 import Content from '../components/Content'
 import { H1, P } from '../components/Typography'
 import { Button } from '../components/Button'
-// import Box from '../components/Box'
 
 const Box = styled.div`
   grid-column: 1/ 4;

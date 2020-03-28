@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { Link, useIntl } from 'gatsby-plugin-intl'
 
-import SEO from '../components/seo'
+import SEO from '../components/SEO'
 
 import Content from '../components/Content'
 import { HeadingContainer } from '../components/layout/FullContentCard'

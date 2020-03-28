@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { Link, useIntl } from 'gatsby-plugin-intl'
 
-import SEO from '../components/seo'
+import SEO from '../components/SEO'
 
 import Content from '../components/Content'
 import AlmaHeader from '../components/Header'

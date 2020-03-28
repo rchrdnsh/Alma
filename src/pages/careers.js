@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { navigate } from '@reach/router'
 import styled from 'styled-components'
-import SEO from '../components/seo'
+import SEO from '../components/SEO'
 
 import Content from '../components/Content'
 import Box from '../components/Box'

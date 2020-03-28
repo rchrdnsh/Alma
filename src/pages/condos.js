@@ -4,7 +4,7 @@ import { Link, useIntl } from 'gatsby-plugin-intl'
 // import styled from 'styled-components'
 // import Img from 'gatsby-image'
 
-import SEO from '../components/seo'
+import SEO from '../components/SEO'
 
 import Content from '../components/Content'
 import { HeadingContainer } from '../components/layout/FullContentCard'

@@ -5,7 +5,7 @@
 // import { MDXRenderer } from 'gatsby-plugin-mdx'
 // import { MDXProvider } from '@mdx-js/react'
 // import Img from 'gatsby-image'
-// import SEO from "../components/seo"
+// import SEO from '../components/SEO'
 // import './article.css'
 
 // import Content from '../components/layout/Content'

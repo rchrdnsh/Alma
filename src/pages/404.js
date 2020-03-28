@@ -1,5 +1,5 @@
 import React from 'react'
-import SEO from '../components/seo'
+import SEO from '../components/SEO'
 
 import AlmaHeader from '../components/Header'
 import Content from '../components/Content'
