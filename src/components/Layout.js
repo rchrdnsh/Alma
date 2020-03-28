@@ -106,14 +106,14 @@ const Main = styled.main`
   }
 `
 
-const AlmaLogo = styled.img`
+const AlmaLogo = styled(motion.img)`
   margin: 0;
   padding: 0;
   grid-column: 1 / 4;
   grid-row: 1 / 3;
   align-self: center;
   justify-self: center;
-  width: 16rem;
+  width: 12rem;
   height: auto;
   z-index: 0;
   opacity: 0.5;
@@ -374,7 +374,17 @@ const Layout = ({ children, location: { pathname, hash } }) => {
           delay: 0
         }}
       >
-        <AlmaLogo alt='The Alma Logo' src={almaLogo} />
+        <AlmaLogo
+          src={almaLogo}
+          alt='The Alma Logo'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            ease: 'easeInOut',
+            duration: 2,
+            delay: 2
+          }}
+        />
         <Menu>
           <Logo/>
           <Navigation/>

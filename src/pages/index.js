@@ -66,7 +66,7 @@ const Slogan = styled.div`
   grid-column: 1 / 9;
   z-index: 5;
   color: white;
-  font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(18px + (36 - 18) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Quicksand';
   align-self: start;
   justify-self: center;
@@ -725,12 +725,22 @@ const Index = ({ data }) => {
       <Box featured>
         <Logo src={almaLogoWithBG} alt="The Alma Resort Logo."/>
         <Slogan>{t({ id: 'slogan' })}</Slogan>
-        {/* <Image grid fluid={data.resort1.childImageSharp.fluid}/>
+        <Image grid fluid={data.resort1.childImageSharp.fluid}/>
         <Caption large>Actual Image</Caption>
-        <Watermark large/> */}
+        <Watermark large/>
         <Scrimm/>
-        <Video height="100%" width="100%" loop muted autoPlay playsinline poster={resort4}>
-          <source src={resortVideo} type="video/mp4"/>
+        <Video
+          playsinline
+          height="100%"
+          width="100%"
+          loop
+          muted
+          autoPlay
+          poster={resort4}>
+            <source
+              src={resortVideo}
+              type="video/mp4"
+            />
         </Video>
         <Arrow/>
       </Box>
