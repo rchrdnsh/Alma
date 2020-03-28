@@ -17,7 +17,7 @@ import { Button } from '../components/Button'
 
 import almaLogoWithBG from '../images/alma/alma-logo-with-bg.svg'
 
-import resortVideo from '../videos/alma-resort-1-minute.mp4'
+import resortVideo from '../videos/alma-resort-1-minute-1k.mp4'
 
 import Arrow from '../components/Arrow'
 
