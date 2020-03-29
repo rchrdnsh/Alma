@@ -14,11 +14,27 @@ const BGVideo = styled.video`
   object-fit: cover;
 `
 
+// const Scrimm = styled.div`
+//   grid-row: 1 / 9;
+//   grid-column: 1 / 9;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 11;
+//   align-self: stretch;
+//   justify-self: stretch;
+//   object-fit: cover;
+//   /* background: hsla(0,0%,0%,0.25); */
+//   background-image: linear-gradient(to bottom, hsla(30, 73%, 60%, 0.3) 0%, hsla(199, 45%, 44%, 0.6) 100%);
+// `
+
 const Video = () => {
   return (
-    <BGVideo playsInline autoPlay muted loop preload="none">
-      <source src={resortVideo} type="video/mp4"/>
-    </BGVideo>
+    <>
+      {/* <Scrimm/> */}
+      <BGVideo playsInline autoPlay muted loop preload="none">
+        <source src={resortVideo} type="video/mp4"/>
+      </BGVideo>
+    </>
   )
 }
 
