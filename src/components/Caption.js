@@ -10,7 +10,7 @@ const CaptionText = styled.figcaption`
   font-family: 'Work Sans', sans-serif;
   margin: 0.75rem;
   padding: 0;
-  z-index: 10;
+  z-index: 9;
   opacity: 0.5;
   ${props => props.small && `font-size: calc(6px + (10 - 6) * ((100vw - 300px) / (1600 - 300)));`}
   ${props => props.medium && `font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));`}

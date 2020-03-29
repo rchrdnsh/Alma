@@ -45,7 +45,7 @@ const Scrimm = styled.div`
   grid-column: 1 / 9;
   width: 100%;
   height: 100%;
-  z-index: 3;
+  z-index: 11;
   align-self: stretch;
   justify-self: stretch;
   object-fit: cover;
@@ -60,7 +60,7 @@ const Logo = styled.img`
   grid-column: 1 / 9;
   align-self: center;
   justify-self: center;
-  z-index: 4;
+  z-index: 12;
 
   @media (orientation: landscape) {
     display: none;
@@ -70,7 +70,7 @@ const Logo = styled.img`
 const Slogan = styled.div`
   grid-row: 3 / 4;
   grid-column: 1 / 9;
-  z-index: 5;
+  z-index: 12;
   color: white;
   font-size: calc(18px + (36 - 18) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Quicksand';
@@ -732,12 +732,9 @@ const Index = ({ data }) => {
         <Logo src={almaLogoWithBG} alt="The Alma Resort Logo."/>
         <Slogan>{t({ id: 'slogan' })}</Slogan>
         <Image grid fluid={data.resort1.childImageSharp.fluid}/>
-        <Caption large>Actual Video</Caption>
+        <Caption large>Actual Image</Caption>
         <Watermark large/>
         <Scrimm/>
-        {/* <Video playsInline autoPlay muted loop preload="none">
-          <source src={resortVideo} type="video/mp4"/>
-        </Video> */}
         <Video/>
         <Arrow/>
       </Box>
