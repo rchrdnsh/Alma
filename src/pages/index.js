@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { Link, useIntl } from 'gatsby-plugin-intl'
+import loadable from '@loadable/component'
 
 import SEO from '../components/SEO'
 
@@ -17,22 +18,27 @@ import { Button } from '../components/Button'
 
 import almaLogoWithBG from '../images/alma/alma-logo-with-bg.svg'
 
-import resortVideo from '../videos/alma-resort-1-min-1k.mp4'
-
 import Arrow from '../components/Arrow'
 
 import Footer from '../components/Footer'
 
-const Video = styled.video`
-  grid-row: 1 / 9;
-  grid-column: 1 / 9;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  align-self: stretch;
-  justify-self: stretch;
-  object-fit: cover;
-`
+// import resortVideo from '../videos/alma-resort-1-min-1k.mp4'
+
+// import Video from '../components/Video'
+const Video = loadable(() => import('../components/Video'))
+
+
+
+// const Video = styled.video`
+//   grid-row: 1 / 9;
+//   grid-column: 1 / 9;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 2;
+//   align-self: stretch;
+//   justify-self: stretch;
+//   object-fit: cover;
+// `
 
 const Scrimm = styled.div`
   grid-row: 1 / 9;
@@ -726,12 +732,13 @@ const Index = ({ data }) => {
         <Logo src={almaLogoWithBG} alt="The Alma Resort Logo."/>
         <Slogan>{t({ id: 'slogan' })}</Slogan>
         <Image grid fluid={data.resort1.childImageSharp.fluid}/>
-        <Caption large>Actual Image</Caption>
+        <Caption large>Actual Video</Caption>
         <Watermark large/>
         <Scrimm/>
-        <Video playsInline autoPlay muted loop preload="none">
+        {/* <Video playsInline autoPlay muted loop preload="none">
           <source src={resortVideo} type="video/mp4"/>
-        </Video>
+        </Video> */}
+        <Video/>
         <Arrow/>
       </Box>
   
