@@ -7,7 +7,7 @@ const Scroll = styled.div`
   padding: 0;
   grid-row: 7 / 8;
   grid-column: 1 / 9;
-  z-index: 5;
+  z-index: 12;
   color: white;
   font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Quicksand';
@@ -23,7 +23,7 @@ const AnimatedArrow = styled(motion.div)`
   padding: 0;
   grid-row: 8 / 9;
   grid-column: 1 / 9;
-  z-index: 5;
+  z-index: 12;
   color: white;
   font-size: calc(18px + (32 - 18) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Quicksand';
