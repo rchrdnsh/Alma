@@ -1,9 +1,9 @@
 import React from 'react'
 import { TransitionGroup, Transition as ReactTransition } from 'react-transition-group'
 
-const timeout = 500
+const timeout = 750
 
-const getTransitionStyles = {
+const transitionStyles = {
   entering: {
     position: `absolute`,
     opacity: 0,
@@ -16,6 +16,10 @@ const getTransitionStyles = {
     transition: `opacity ${timeout}ms ease-in-out`,
     opacity: 0,
   },
+  exited: {
+    transition: `opacity ${timeout}ms ease-in-out`,
+    opacity: 0,
+  }
 }
 
 class Transition extends React.PureComponent {
@@ -27,15 +31,11 @@ class Transition extends React.PureComponent {
           key={location.pathname}
           timeout={{
             enter: timeout,
-            exit: timeout,
+            exit: timeout
           }}
         >
           {status => (
-            <div
-              style={{
-                ...getTransitionStyles[status],
-              }}
-            >
+            <div style={{...transitionStyles[status]}}>
               {children}
             </div>
           )}

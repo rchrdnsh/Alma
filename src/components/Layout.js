@@ -52,7 +52,7 @@ const AlmaShell = styled.img`
   height: auto;
   z-index: 0;
   opacity: 0;
-  animation: fadeInShell ease 2s;
+  animation: fadeInShell ease 4s;
   animation-delay: 0s;
   animation-iteration-count: 1; 
   animation-fill-mode: forwards;
@@ -61,8 +61,11 @@ const AlmaShell = styled.img`
     0% {
       opacity: 0;
     }
-    100% {
+    50% {
       opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 
@@ -117,7 +120,7 @@ const Main = styled.main`
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  z-index: 1;
+  z-index: 3;
   
   box-shadow: 0px 0px 16px hsla(0,0%,0%,1);
 
@@ -141,13 +144,20 @@ const AlmaLogo = styled.img`
   justify-self: center;
   width: 8rem;
   height: auto;
-  z-index: 0;
-  opacity: 0.5;
+  z-index: 2;
+  opacity: 0.4;
   
   @media (orientation: landscape) {
-    grid-column: 2 / 3;
-    grid-row: 1 / 5;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    height: 100vh;
+    width: 80vw;
+    height: calc(var(--vh, 1vh) * 100);
     width: 16rem;
+    z-index: 1;
   }
 `
 
@@ -209,12 +219,21 @@ const Layout = ({ children, location: { pathname, hash } }) => {
         const eventStaff = document.querySelector('#event-staff').offsetTop
         document.querySelector('#main').scrollTop = eventStaff
       } else {
-        document.querySelector('#main').scrollTop = 0
+        setTimeout(() => document.querySelector('#main').scrollTop = 0, 500)
       }
     } else {
-      document.querySelector('#main').scrollTop = 0
+      setTimeout(() => document.querySelector('#main').scrollTop = 0, 500)
+      // window.setTimeout(() => window.scrollTo(0,0), 500)
     }
   }, [hash, pathname])
+
+  // useEffect(() => {
+  //   setTimeout(() => document.querySelector('#main').scrollTop = 0, 500)
+  // }, [])
+
+  // useEffect(() => {
+  //   window.setTimeout(() => window.scrollTo(0,0), 500)
+  // }, [])
 
   // ----------------------------------------------------------------
   // for the framer-motion animated logo
