@@ -45,7 +45,7 @@ const Scrimm = styled.div`
   grid-column: 1 / 9;
   width: 100%;
   height: 100%;
-  z-index: 11;
+  z-index: 8;
   align-self: stretch;
   justify-self: stretch;
   object-fit: cover;
