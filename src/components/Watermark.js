@@ -8,7 +8,7 @@ const WatermarkImage = styled.img`
   right: 0;
   margin: 0.75rem;
   padding: 0;
-  z-index: 12;
+  z-index: 9;
   height: auto;
   opacity: 0.5;
   ${props => props.small && `width: 12%;`}

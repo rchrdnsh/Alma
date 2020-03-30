@@ -27,8 +27,6 @@ import Footer from '../components/Footer'
 // import Video from '../components/Video'
 const Video = loadable(() => import('../components/Video'))
 
-
-
 // const Video = styled.video`
 //   grid-row: 1 / 9;
 //   grid-column: 1 / 9;
@@ -45,7 +43,7 @@ const Scrimm = styled.div`
   grid-column: 1 / 9;
   width: 100%;
   height: 100%;
-  z-index: 8;
+  z-index: 12;
   align-self: stretch;
   justify-self: stretch;
   object-fit: cover;

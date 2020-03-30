@@ -11,7 +11,7 @@ import { HeadingContainer } from '../components/layout/FullContentCard'
 import Arrow from '../components/Arrow'
 import AlmaHeader from '../components/Header'
 import { Button } from '../components/Button'
-import { P } from '../components/Typography'
+import { H1, P } from '../components/Typography'
 import Watermark from '../components/Watermark'
 import Caption from '../components/Caption'
 
@@ -51,6 +51,22 @@ const News = ({ data }) => {
         <Watermark large/>
         <Arrow/>
       </Box>
+
+      <AlmaHeader center blue title={t({ id: 'march-title' })}/>
+
+      <P center>{t({ id: 'march-intro-paragraph' })}</P>
+
+      <H1 center>{t({ id: 'march-heading-1' })}</H1>
+      <P center>{t({ id: 'march-paragraph-1' })}</P>
+
+      <H1 center>{t({ id: 'march-heading-2' })}</H1>
+      <P center>{t({ id: 'march-paragraph-2' })}</P>
+
+      <H1 center>{t({ id: 'march-heading-3' })}</H1>
+      <P center>{t({ id: 'march-paragraph-3' })}</P>
+
+      <H1 center>{t({ id: 'march-heading-4' })}</H1>
+      <P center>{t({ id: 'march-paragraph-4' })}</P>
 
       <AlmaHeader center blue title={t({ id: 'february-title' })}/>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import resortVideo from '../videos/alma-resort-1-min-1k.mp4'
+import resortVideo from '../videos/alma-resort-1-min-3k.mp4'
 
 const BGVideo = styled.video`
   grid-row: 1 / 9;
@@ -30,7 +30,7 @@ const Scrimm = styled.div`
 const Video = () => {
   return (
     <>
-      <Scrimm/>
+      {/* <Scrimm/> */}
       <BGVideo playsInline autoPlay muted loop>
         <source src={resortVideo} type="video/mp4"/>
       </BGVideo>
