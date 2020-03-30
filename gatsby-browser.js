@@ -9,8 +9,10 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
+// set the delay time in milliseconds
 const transitionDelay = 500
 
+//delay updating the scroll position of the window for 500ms
 exports.shouldUpdateScroll = ({
     routerProps: { location },
     getSavedScrollPosition,
