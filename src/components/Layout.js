@@ -198,7 +198,7 @@ const Menu = styled.div`
   }
 `
 
-const Layout = ({ children, location: { pathname, hash } }) => {
+const Layout = ({ children, location: { pathname, hash }, location }) => {
 
   // ----------------------------------------------------------------
   // custom scroll  position logic
@@ -264,7 +264,7 @@ const Layout = ({ children, location: { pathname, hash } }) => {
           {/* <Contact/> */}
         </Menu>
         <Main id='main'>
-          <Transition location={window.location}>
+          <Transition location={location}>
             {children}
           </Transition>
         </Main>

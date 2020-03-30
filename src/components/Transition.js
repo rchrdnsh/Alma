@@ -1,7 +1,7 @@
 import React from 'react'
 import { TransitionGroup, Transition as ReactTransition } from 'react-transition-group'
 
-const timeout = 750
+const timeout = 500
 
 const transitionStyles = {
   entering: {

@@ -9,7 +9,7 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-const transitionDelay = 750
+const transitionDelay = 500
 
 exports.shouldUpdateScroll = ({
     routerProps: { location },
