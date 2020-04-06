@@ -537,18 +537,42 @@ const Index = ({ data }) => {
     },
   ]
 
-  const condo2 = [
-    data.condo2mobile.childImageSharp.fluid,
-    {
-      ...data.condo2desktop.childImageSharp.fluid,
-      media: `(orientation: landscape)`,
-    },
-  ]
+  // const condo2 = [
+  //   data.condo2mobile.childImageSharp.fluid,
+  //   {
+  //     ...data.condo2desktop.childImageSharp.fluid,
+  //     media: `(orientation: landscape)`,
+  //   },
+  // ]
 
   const condo3 = [
     data.condo3mobile.childImageSharp.fluid,
     {
       ...data.condo3desktop.childImageSharp.fluid,
+      media: `(orientation: landscape)`,
+    },
+  ]
+
+  const suite1 = [
+    data.suite1mobile.childImageSharp.fluid,
+    {
+      ...data.suite1desktop.childImageSharp.fluid,
+      media: `(orientation: landscape)`,
+    },
+  ]
+
+  const suite2 = [
+    data.suite2mobile.childImageSharp.fluid,
+    {
+      ...data.suite2desktop.childImageSharp.fluid,
+      media: `(orientation: landscape)`,
+    },
+  ]
+
+  const suite3 = [
+    data.suite3mobile.childImageSharp.fluid,
+    {
+      ...data.suite3desktop.childImageSharp.fluid,
       media: `(orientation: landscape)`,
     },
   ]
@@ -835,17 +859,27 @@ const Index = ({ data }) => {
       <Box full>
         <Box scroll blue> 
           <Card>
-            <Image card fluid={condo1} durationFadeIn={1000} alt="The Alma Resort."/>
-            <Caption small>Actual Image</Caption>
-            <Watermark small/>
-          </Card>
-          <Card>
-            <Image card fluid={condo2} durationFadeIn={1000} alt="The Alma Resort."/>
-            <Caption small>Actual Image</Caption>
-            <Watermark small/>
-          </Card>
-          <Card>
             <Image card fluid={condo3} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Caption small>Actual Image</Caption>
+            <Watermark small/>
+          </Card>
+          <Card>
+            <Image card fluid={suite1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Caption small>Actual Image</Caption>
+            <Watermark small/>
+          </Card>
+          <Card>
+            <Image card fluid={suite2} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Caption small>Actual Image</Caption>
+            <Watermark small/>
+          </Card>
+          <Card>
+            <Image card fluid={suite3} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Caption small>Actual Image</Caption>
+            <Watermark small/>
+          </Card>
+          <Card>
+            <Image card fluid={condo1} durationFadeIn={1000} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
@@ -1237,20 +1271,20 @@ export const query = graphql`
         }
       }
     }
-    condo2mobile: file(relativePath: { eq: "condos/condo-2-1-3x4.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1620) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    condo2desktop: file(relativePath: { eq: "condos/condo-2-4x3.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2880) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
+    # condo2mobile: file(relativePath: { eq: "condos/condo-2-1-3x4.jpg" }) {
+    #   childImageSharp {
+    #     fluid(maxWidth: 1620) {
+    #       ...GatsbyImageSharpFluid_withWebp
+    #     }
+    #   }
+    # }
+    # condo2desktop: file(relativePath: { eq: "condos/condo-2-4x3.jpg" }) {
+    #   childImageSharp {
+    #     fluid(maxWidth: 2880) {
+    #       ...GatsbyImageSharpFluid_withWebp
+    #     }
+    #   }
+    # }
     condo3mobile: file(relativePath: { eq: "condos/condo-3-1-3x4.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1620) {
@@ -1259,6 +1293,48 @@ export const query = graphql`
       }
     }
     condo3desktop: file(relativePath: { eq: "condos/condo-3-4x3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2880) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite1mobile: file(relativePath: { eq: "condos/suite-living-room-1-3x4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1620) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite1desktop: file(relativePath: { eq: "condos/suite-living-room-1-4x3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2880) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite2mobile: file(relativePath: { eq: "condos/suite-bedroom-1-1-3x4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1620) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite2desktop: file(relativePath: { eq: "condos/suite-bedroom-1-4x3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2880) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite3mobile: file(relativePath: { eq: "condos/suite-bathroom-1-1-3x4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1620) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite3desktop: file(relativePath: { eq: "condos/suite-bathroom-1-4x3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2880) {
           ...GatsbyImageSharpFluid_withWebp
