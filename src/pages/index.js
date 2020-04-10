@@ -829,12 +829,12 @@ const Index = ({ data }) => {
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={villaexterior2} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={villaexterior3} durationFadeIn={1000} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={villaexterior3} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={villaexterior2} durationFadeIn={1000} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
@@ -864,12 +864,12 @@ const Index = ({ data }) => {
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={suite1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={suite2} durationFadeIn={1000} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={suite2} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={suite1} durationFadeIn={1000} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>

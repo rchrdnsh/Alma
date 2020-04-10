@@ -57,8 +57,8 @@ const Condos = ({ data }) => {
         <HeadingContainer>
           <AlmaHeader white title={t({ id: "apartments-title" })}/>
         </HeadingContainer>
-        <Image grid fluid={data.apartmentLivingRoom1.childImageSharp.fluid}/>
-        <Caption large>Artist Rendering</Caption>
+        <Image grid fluid={data.condo3desktop.childImageSharp.fluid}/>
+        <Caption large>Actual Image</Caption>
         <Watermark large/>
         <Arrow/>
       </Box>
@@ -66,32 +66,32 @@ const Condos = ({ data }) => {
       <P center>{t({ id: "apartments-paragraph-1" })}</P>
 
       <Box full image>
-        <Image rounded fluid={data.apartmentLivingRoom2.childImageSharp.fluid}/>
-        <Caption medium>Artist Rendering</Caption>
+        <Image rounded fluid={data.condo1desktop.childImageSharp.fluid}/>
+        <Caption medium>Actual Image</Caption>
         <Watermark medium/>
       </Box>
 
       <P center>{t({ id: "apartments-paragraph-2" })}</P>
 
       <Box full image>
-        <Image rounded fluid={data.apartmentKitchen.childImageSharp.fluid}/>
-        <Caption medium>Artist Rendering</Caption>
+        <Image rounded fluid={data.suite1desktop.childImageSharp.fluid}/>
+        <Caption medium>Actual Image</Caption>
         <Watermark medium/>
       </Box>
 
       <P center>{t({ id: "apartments-paragraph-3" })}</P>
 
       <Box full image>
-        <Image rounded fluid={data.apartmentBedroom.childImageSharp.fluid}/>
-        <Caption medium>Artist Rendering</Caption>
+        <Image rounded fluid={data.suite2desktop.childImageSharp.fluid}/>
+        <Caption medium>Actual Image</Caption>
         <Watermark medium/>
       </Box>
 
       <P center>{t({ id: "apartments-paragraph-4" })}</P>
 
       <Box full image>
-        <Image rounded fluid={data.apartmentBathroom.childImageSharp.fluid}/>
-        <Caption medium>Artist Rendering</Caption>
+        <Image rounded fluid={data.suite3desktop.childImageSharp.fluid}/>
+        <Caption medium>Actual Image</Caption>
         <Watermark medium/>
       </Box>
 
@@ -146,13 +146,13 @@ const Condos = ({ data }) => {
         </FlexContainer>
       </Box> */}
 
-        <P center>{t({ id: "villas-to-restaurants" })}</P>
+      <P center>{t({ id: "villas-to-restaurants" })}</P>
 
-        <Box center button>
-          <Link to="/restaurants">
-            <Button>{t({ id: "restaurants-title" })}</Button>
-          </Link> 
-        </Box>
+      <Box center button>
+        <Link to="/restaurants">
+          <Button>{t({ id: "restaurants-title" })}</Button>
+        </Link> 
+      </Box>
 
       <Footer/>
 
@@ -162,38 +162,87 @@ const Condos = ({ data }) => {
 
 export const query = graphql`
   query {
-    apartmentLivingRoom1: file(relativePath: { eq: "apartments/apartment-living-room-1-render-4x3.jpg" }) {
+    condo1mobile: file(relativePath: { eq: "condos/condo-1-3x4.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2880) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 1620) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    apartmentLivingRoom2: file(relativePath: { eq: "apartments/apartment-living-room-2-render-4x3.jpg" }) {
+    condo1desktop: file(relativePath: { eq: "condos/condo-1-4x3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2880) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    apartmentKitchen: file(relativePath: { eq: "apartments/apartment-kitchen-render-4x3.jpg" }) {
+    condo2mobile: file(relativePath: { eq: "condos/condo-2-1-3x4.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2880) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 1620) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    apartmentBedroom: file(relativePath: { eq: "apartments/apartment-bedroom-render-4x3.jpg" }) {
+    condo2desktop: file(relativePath: { eq: "condos/condo-2-4x3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2880) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    apartmentBathroom: file(relativePath: { eq: "apartments/apartment-bathroom-render-4x3.jpg" }) {
+    condo3mobile: file(relativePath: { eq: "condos/condo-3-1-3x4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1620) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    condo3desktop: file(relativePath: { eq: "condos/condo-3-4x3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2880) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite1mobile: file(relativePath: { eq: "condos/suite-living-room-1-3x4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1620) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite1desktop: file(relativePath: { eq: "condos/suite-living-room-1-4x3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2880) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite2mobile: file(relativePath: { eq: "condos/suite-bedroom-1-1-3x4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1620) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite2desktop: file(relativePath: { eq: "condos/suite-bedroom-1-4x3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2880) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite3mobile: file(relativePath: { eq: "condos/suite-bathroom-1-1-3x4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1620) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    suite3desktop: file(relativePath: { eq: "condos/suite-bathroom-1-4x3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2880) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

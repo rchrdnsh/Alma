@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Link, useIntl } from 'gatsby-plugin-intl'
+import { useIntl } from 'gatsby-plugin-intl'
 
 import SEO from '../components/SEO'
 
@@ -82,6 +82,12 @@ const News = ({ data }) => {
       <P center>{t({ id: 'january-paragraph-2' })}</P>
       <P center>{t({ id: 'january-paragraph-3' })}</P>
       <P center>{t({ id: 'january-paragraph-4' })}</P>
+
+      <AlmaHeader center blue title={t({ id: 'december-title' })}/>
+
+      <P center>{t({ id: 'december-paragraph-1' })}</P>
+      <P center>{t({ id: 'december-paragraph-2' })}</P>
+      <P center>{t({ id: 'december-paragraph-3' })}</P>
         
       {/* <CenteredContainer>
         <Space/>
