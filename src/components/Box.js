@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import almaPattern1 from '../images/alma/alma-bg-pattern-1.svg'
 import almaPattern2 from '../images/alma/alma-bg-pattern-2.svg'
+import almaPattern3 from '../images/alma/alma-bg-pattern-3.svg'
 
 const Box = styled.div`
   margin: 0;
@@ -74,6 +75,12 @@ const Box = styled.div`
     props.orange && `
       background-color: hsla(30, 46%, 59%, 1); 
       background-image: url(${almaPattern2});
+  `}
+
+${props =>
+    props.grey && `
+      background-color: hsla(30, 46%, 59%, 1); 
+      background-image: url(${almaPattern3});
   `}
 
   ${props =>

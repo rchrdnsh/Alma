@@ -46,7 +46,7 @@ const News = ({ data }) => {
         <HeadingContainer>
           <AlmaHeader white title={t({ id: 'news-title' })}/>
         </HeadingContainer>
-        <Image grid fluid={data.oct19.childImageSharp.fluid}/>
+        <Image grid fluid={data.resort7.childImageSharp.fluid}/>
         <Caption large>Actual Image</Caption>
         <Watermark large/>
         <Arrow/>
@@ -110,7 +110,7 @@ const News = ({ data }) => {
 
 export const query = graphql`
   query {
-    oct19: file(relativePath: { eq: "construction/october-2019-19.jpg" }) {
+    resort7: file(relativePath: { eq: "resort/resort-7-4x3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2880) {
           ...GatsbyImageSharpFluid_withWebp

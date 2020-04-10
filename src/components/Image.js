@@ -10,6 +10,7 @@ const Image = styled(Img)`
   height: auto;
   /* ${props => props.rounded && `border-radius: 16px`} */
   border-radius: ${props => props.rounded ? "16px" : "0"};
+
   ${props => props.grid && `
     grid-row: 1 / 9;
     grid-column: 1 / 9;
@@ -32,7 +33,7 @@ const Image = styled(Img)`
   @media (orientation: landscape) {
     /* ${props => props.margin && `margin: 0 2rem`} */
     /* ${props => props.rounded && `border-radius: 24px`} */
-    border-radius: ${props => props.rounded ? "24px" : "0"};
+    /* border-radius: ${props => props.rounded ? "24px" : "0"}; */
   }
 
   @media (min-width: 75rem ) {

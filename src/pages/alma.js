@@ -31,7 +31,7 @@ const Alma = ({ data }) => {
         <HeadingContainer>
           <AlmaHeader white title={t({ id: 'alma-title' })}/>
         </HeadingContainer>
-        <Image grid fluid={data.almaConstruction.childImageSharp.fluid}/>
+        <Image grid fluid={data.resort5.childImageSharp.fluid}/>
         <Caption large>Actual Image</Caption>
         <Watermark large/>
         <Arrow/>
@@ -82,7 +82,7 @@ const Alma = ({ data }) => {
 
 export const query = graphql`
   query {
-    almaConstruction: file(relativePath: { eq: "construction/june-5.jpg" }) {
+    resort5: file(relativePath: { eq: "resort/resort-5-4x3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2880) {
           ...GatsbyImageSharpFluid

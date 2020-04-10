@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { Link, useIntl } from 'gatsby-plugin-intl'
-import loadable from '@loadable/component'
 
 import SEO from '../components/SEO'
 
@@ -22,28 +21,12 @@ import Arrow from '../components/Arrow'
 
 import Footer from '../components/Footer'
 
-// import resortVideo from '../videos/alma-resort-1-min-1k.mp4'
-
-// import Video from '../components/Video'
-const Video = loadable(() => import('../components/Video'))
-
-// const Video = styled.video`
-//   grid-row: 1 / 9;
-//   grid-column: 1 / 9;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 2;
-//   align-self: stretch;
-//   justify-self: stretch;
-//   object-fit: cover;
-// `
-
 const Scrimm = styled.div`
   grid-row: 1 / 9;
   grid-column: 1 / 9;
   width: 100%;
   height: 100%;
-  z-index: 12;
+  z-index: 5;
   align-self: stretch;
   justify-self: stretch;
   object-fit: cover;
@@ -537,14 +520,6 @@ const Index = ({ data }) => {
     },
   ]
 
-  // const condo2 = [
-  //   data.condo2mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.condo2desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
-
   const condo3 = [
     data.condo3mobile.childImageSharp.fluid,
     {
@@ -585,14 +560,6 @@ const Index = ({ data }) => {
     },
   ]
 
-  // const almagarden2 = [
-  //   data.almagarden2mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.almagarden2desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
-
   const americanbar1 = [
     data.americanbar1mobile.childImageSharp.fluid,
     {
@@ -601,22 +568,6 @@ const Index = ({ data }) => {
     },
   ]
 
-  // const americanbar2 = [
-  //   data.americanbar2mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.americanbar2desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
-
-  // const americanbar3 = [
-  //   data.americanbar3mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.americanbar3desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
-
   const asiana1 = [
     data.asiana1mobile.childImageSharp.fluid,
     {
@@ -624,14 +575,6 @@ const Index = ({ data }) => {
       media: `(orientation: landscape)`,
     },
   ]
-
-  // const asiana2 = [
-  //   data.asiana2mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.asiana2desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
 
   const atlantis1 = [
     data.atlantis1mobile.childImageSharp.fluid,
@@ -648,54 +591,6 @@ const Index = ({ data }) => {
       media: `(orientation: landscape)`,
     },
   ]
-
-  // const beachbar1 = [
-  //   data.beachbar1mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.beachbar1desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
-
-  // const beachbar2 = [
-  //   data.beachbar2mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.beachbar2desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
-
-  // const beachbar3 = [
-  //   data.beachbar3mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.beachbar3desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
-
-  // const beachbar4 = [
-  //   data.beachbar4mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.beachbar4desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
-
-  // const beachbar5 = [
-  //   data.beachbar5mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.beachbar5desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
-
-  // const beachbar6 = [
-  //   data.beachbar6mobile.childImageSharp.fluid,
-  //   {
-  //     ...data.beachbar6desktop.childImageSharp.fluid,
-  //     media: `(orientation: landscape)`,
-  //   },
-  // ]
 
   const beachbar7 = [
     data.beachbar7mobile.childImageSharp.fluid,
@@ -757,7 +652,6 @@ const Index = ({ data }) => {
         <Caption large>Actual Image</Caption>
         <Watermark large/>
         <Scrimm/>
-        <Video/>
         <Arrow/>
       </Box>
   
@@ -784,27 +678,27 @@ const Index = ({ data }) => {
       <Box full>
         <Box scroll orange>
           <Card>
-            <Image card fluid={resort4} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={resort4} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={resort2} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={resort2} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={resort3} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={resort3} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={resortNight1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={resortNight1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={resortNight2} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={resortNight2} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
@@ -824,22 +718,22 @@ const Index = ({ data }) => {
       <Box full>
         <Box scroll blue>
           <Card>
-            <Image card fluid={villaexterior1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={villaexterior1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={villaexterior3} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={villaexterior3} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={villaexterior2} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={villaexterior2} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={villaexterior4} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={villaexterior4} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
@@ -859,27 +753,27 @@ const Index = ({ data }) => {
       <Box full>
         <Box scroll blue> 
           <Card>
-            <Image card fluid={condo3} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={condo3} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={suite2} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={suite2} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={suite1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={suite1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={suite3} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={suite3} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={condo1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={condo1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
@@ -899,32 +793,32 @@ const Index = ({ data }) => {
       <Box full>
         <Box scroll blue>
           <Card>
-            <Image card fluid={almagarden1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={almagarden1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={americanbar1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={americanbar1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={asiana1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={asiana1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={atlantis1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={atlantis1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={atlantis2} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={atlantis2} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={beachbar7} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={beachbar7} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
@@ -944,27 +838,27 @@ const Index = ({ data }) => {
       <Box full>
         <Box scroll blue>
           <Card>
-            <Image card fluid={spa3} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={spa3} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={cinema1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={cinema1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={kidsclub1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={kidsclub1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={tenniscourts1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={tenniscourts1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
           <Card>
-            <Image card fluid={almamart1} durationFadeIn={1000} alt="The Alma Resort."/>
+            <Image card fluid={almamart1} alt="The Alma Resort."/>
             <Caption small>Actual Image</Caption>
             <Watermark small/>
           </Card>
