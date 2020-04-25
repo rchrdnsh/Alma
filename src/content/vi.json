@@ -20,7 +20,7 @@
   "close-button": "Đóng",
 
   "instagram-paragraph": "Ngắm và chia sẻ hình ảnh về khoảnh khắc khó quên cùng những video du lịch của bạn, hashtag #AlmaVacations.",
-  "copyright-notice": "© Bản quyền 2019, Alma USA LLC. Bảo lưu mọi quyền.",
+  "copyright-notice": "© Bản quyền 2019, Alma USA, Inc. Bảo lưu mọi quyền.",
   "solicitation-notice": "Trang nhà này được dùng cho mục đích giới thiệu giao dịch quyền sử dụng bất động sản và địa điểm du lịch với hạn mức ngày sử dụng nhất định.",
 
   "resort-title": "Khu Nghỉ Dưỡng",
@@ -93,16 +93,18 @@
 
   "villas-to-restaurants": "Nhấn vào đây để khám phá ẩm thực sành điệu tại các nhà hàng tiêu chuẩn quốc tế cùng khu ẩm thực.",
 
-  "restaurants-title": "Nhà Hàng",
+  "restaurants-title": "Restaurants",
   "restaurants-subtitle": "",
-  "restaurants-intro-paragraph": "Không gian sống tại khu nghỉ dưỡng Alma chỉ là một khởi đầu bước vào thiên đường yên bình kỳ diệu này, bao quanh bởi nhiều nhà hàng được thiết kế tuyệt đẹp và ẩm thực tiêu chuẩn quốc tế, có thể làm hài lòng mọi thực khách bất kể ngày đêm.",
-
-  "restaurants-paragraph-1": "Khu ẩm thực chính là nhà hàng phục vụ suốt nguyên ngày với nhiều món ngon từ khắp nơi trên thế giới, có thể giúp bạn thỏa mọi ý thích ăn uống.",
-  "restaurants-paragraph-2": "Khi bạn muốn ăn uống nhẹ ngay trên bãi biển, dưới ánh nắng vàng, nhà hàng chuyên về đồ nướng và quầy rượu là chọn lựa thích hợp.",
-  "restaurants-paragraph-3": "Nhà hàng chuyên về ẩm thực á đông giới thiệu các món ngon từ khắp năm châu, có thể làm ngon miệng ngay cả thực khách sành điệu nhất.",
-  "restaurants-paragraph-4": "Nhà hàng Ý chuyên về các món thịt nguội, mì tươi, và bánh pizza, cùng nhiều loại phô mai nhập về từ Ý.",
-  "restaurants-paragraph-5": "Khu ẩm thực sẽ có nhiều món ăn đa dạng từ khắp năm châu, bao gồm những món đặc sản từ địa phương, được phục vụ theo dạng xe hàng ăn lưu động, mang lại hương vị các món ăn và thức uống đường phố đúng chất lượng.",
-  "restaurants-paragraph-6": "Quán rượu sẽ chuyên về cocktail, dùng các cây trái và thảo hương từ địa phương với cách pha chế và phục vụ đầy sáng tạo, mang lại nghệ thuật và phong cách đặc sắc trong mỗi ly rượu.",
+  "restaurants-intro-paragraph": "Người ta bảo du lịch không thể thiếu ẩm thực, và ẩm thực là một cách chu du thế giới. Alma Resort muốn đem lại cho các chủ nhân sở hữu kỳ nghỉ những hương vị quốc tế mà không phải rời một bước. Alma resort sở hữu 14 nhà hàng và quán bar view biển tuyệt đẹp. Xin giới thiệu một vài điểm hẹn mà chúng tôi rất lấy làm hãnh diện.",
+  
+  "asiana-heading": "Nhà hàng Asiana Nhật Bản",
+  "asiana-paragraph": "Nhà hàng sở hữu tầm nhìn thoáng đãng, chuyên phục vụ các món ăn Nhật Bản do bếp trưởng Fukuda Takanori đảm nhiệm. Nhà hàng Asiana giới thiệu đến du khách các món ăn hấp dẫn như thịt bò wagyu, bào ngư, sò điệp, cá tuyết, cá ngừ và cá mòi cùng nhiều loại rượu bản xứ như sake hay whisky Nhật Bản. Tại đây, các thực khách sẽ được tận mắt chứng kiến các đầu bếp nướng thịt, làm sushi và sashimi với tài nghệ đẳng cấp và độ chính xác tuyệt đối.",
+  "la-casa-heading": "Nhà hàng La Casa Ý",
+  "la-casa-paragraph": "Với căn bếp mở và không gian lãng mạn của ánh đèn dịu nhẹ, đầu bếp tài năng người Ý Francesco Conzattu khéo léo kết hợp các nguyên liệu có nguồn gốc từ đất nước Italy với các sản phẩm hữu cơ mang đến các món ăn kinh điển như pizza Napoletana trứ danh và Lasagne truyền thống. Đặc biệt, món mì tươi pasta được các đầu bếp làm trực tiếp bằng tay, bánh mỳ nướng giòn ngay tại lò dùng cùng với các loại rượu vang nổi tiếng.",
+  "atlantis-heading": "Nhà hàng hải sản ven biển Atlantis",
+  "atlantis-paragraph": "Nổi bật với tông màu xanh lam, Atlantis mang đậm phong cách Địa Trung Hải, chuyên phục vụ các món ăn nhẹ, salad, các món thịt và hải sản nướng tươi ngon. Từ đây, thực khách có thể vừa chiêm ngưỡng bờ biển diễm lệ, vừa nhâm nhi một ly rượu vang thượng hạng và thưởng thức món tôm hùm hấp dẫn.",
+  "food-court-heading": "Khu ẩm thực thế giới",
+  "food-court-paragraph": "Khu ẩm thực ALMA Food Court sở hữu 6 quầy ẩm thực  như nhà hàng An Nam với các món đặc sản Việt Nam, xe tải bán bánh burger lưu động kiểu Mỹ - Burger House, quầy gà rán Chicken ‘n Go, quầy kem gelato Three Scoops, quầy bánh mì Pháp French Bakery và quầy Espresso Bar phục vụ trà, cà phê và nước ép quả. ",
 
   "restaurants-list": "NHÀ HÀNG & BAR RƯỢU",
   "restaurant-1": "Vườn Thượng Uyển Alma - phục vụ nguyên ngày",
@@ -153,6 +155,13 @@
   "news-title": "Tin Tức",
   "news-subtitle": "",
   "news-intro-paragraph": "Hãy theo dõi những tin tức chúng tôi cập nhật thường xuyên về Alma.",
+
+  "april-title": "Tháng Tư",
+  "april-paragraph-1": "Trong sự thay đổi nhanh chóng giữa thế giới chúng ta đang sống, lúc này là khoảnh khắc tĩnh lặng để trân quý những người thân, để yêu thương và tạo nên những ký ức đẹp đẽ với nhau.",
+  "april-paragraph-2": "Mùa xuân đang ngoài ngõ, và thời tiết không thể nào lý tưởng hơn để thỏa chí du lịch, đáp lại tiếng gọi hãy chu du và trải nghiệm những gì tốt đẹp nhất mà cuộc sống dành cho mình. Những chủ nhân của Alma chia sẻ qua bình luận cùng hình ảnh trên Instagram và Facebook rằng bình minh và hoàng hôn trong mùa xuân rất rực rỡ và sáng chói. Họ cũng khen ngợi hết lời những món ăn tuyệt vời trong khu resort. Ẩm thực ưu tú là điều mà chúng tôi vô cùng hãnh diện. Những lời chia sẻ của các bạn cho chúng tôi biết các bạn đang trải nghiệm sự cao cấp, thư giãn, tràn ngập niềm vui tại Alma.",
+  "april-paragraph-3": "Sứ mệnh của Alma là trách nhiệm xã hội và trách nhiệm với môi trường, và chúng tôi không chỉ muốn mang lại cho các bạn và gia đình những kỳ nghỉ sang trọng, mà chúng tôi còn muốn thực hiện được điều này trong sự hòa hợp môi sinh. Các bạn có nhận thấy ánh đèn kết hợp hình trái tim là Alma phát sáng hàng đêm để chia sẻ những khó khăn cùng  thế giới? Các bạn có thấy khu nghỉ dưỡng được vận hành một cách rất thân thiện với môi trường? Đó là vì chúng tôi dành quan tâm. Thật sự quan tâm.",
+  "april-paragraph-4": "Và các bạn hãy vững lòng là cho dù cuộc sống có gặp những sóng gió, những kỷ niệm mà các bạn cùng trải nghiệm tại Alma sẽ vượt thời gian. Đó là những tài sản mà các bạn có thể cất giữ an toàn bên trong thiên đường này.",
+  "april-paragraph-5": "Chúc các bạn nhiều sức khỏe và bình an.",
 
   "march-title": "Tháng Ba",
   "march-intro-paragraph": "Người ta bảo du lịch không thể thiếu ẩm thực, và ẩm thực là một cách chu du thế giới. Alma Resort muốn đem lại cho các chủ nhân sở hữu kỳ nghỉ những hương vị quốc tế mà không phải rời một bước. Alma resort sở hữu 14 nhà hàng và quán bar view biển tuyệt đẹp. Xin giới thiệu một vài điểm hẹn mà chúng tôi rất lấy làm hãnh diện:",

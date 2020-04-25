@@ -48,15 +48,11 @@ const Footer = () => {
 
   return (
     <Container>
-      <Spacer/>
       <P>{t({ id: "copyright-notice" })}</P>
-      <Spacer/>
       <P>{t({ id: "solicitation-notice" })}</P>
-      <Spacer/>
       <P>Contact Us:</P>
       <P>1.714.689.8554</P>
       <P>575 Anton Blvd Suite 650 Costa Mesa, CA 92626</P>
-      <BannerSpacer/>
     </Container>
   )
 }

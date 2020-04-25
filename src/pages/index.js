@@ -957,37 +957,6 @@ const Index = ({ data }) => {
 
 export const query = graphql`
   query {
-    # articles: allMdx(
-    #   sort: {
-    #     fields: frontmatter___order},
-    #     filter: {
-    #       fileAbsolutePath: {regex: "/content/news/"},
-    #       frontmatter: {status: {eq: "published"} }
-    #   }
-    # )
-    # {
-    #   totalCount
-    #   edges {
-    #     node {
-    #       id
-    #       timeToRead
-    #       fields {
-    #         slug
-    #       }
-    #       frontmatter {
-    #         title
-    #         subtitle
-    #         image {
-    #           childImageSharp {
-    #             fluid(maxWidth: 3840) {
-    #             ...GatsbyImageSharpFluid
-    #             }
-    #           }
-    #         }
-    #       }
-    #     }
-    #   }
-    # }
     allInstaNode(sort: { fields: [timestamp], order: DESC }) {
       edges {
         node {

@@ -79,15 +79,15 @@ const App = styled.div`
   padding: 0;
   width: 100vw;
   height: 100vh;
-  opacity: 0;
   height: calc(var(--vh, 1vh) * 100);
+  opacity: 0;
   z-index: 1;
   animation: fadeInApp ease 2s;
   animation-delay: 2s;
   animation-iteration-count: 1; 
   animation-fill-mode: forwards;
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+CjxyZWN0IHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgZmlsbD0iI2ZmZmZmZiI+PC9yZWN0Pgo8cmVjdCB4PSIxNSIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjZmRmZGZkIj48L3JlY3Q+Cjwvc3ZnPg==");
-  background-repeat: repeat;
+  /* background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+CjxyZWN0IHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgZmlsbD0iI2ZmZmZmZiI+PC9yZWN0Pgo8cmVjdCB4PSIxNSIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjZmRmZGZkIj48L3JlY3Q+Cjwvc3ZnPg==");
+  background-repeat: repeat; */
   display: grid;
   grid-template-rows: 20vh 70vh 10vh;
   grid-template-rows:
@@ -127,11 +127,12 @@ const Main = styled.main`
   @media (orientation: landscape) {
     grid-column: 2 / 3;
     grid-row: 1 / 6;
-    /* overflow-x: hidden;
-    overflow-y: scroll; */
-    overflow-x: initial;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* overflow-x: initial;
     overflow-y: initial;
     position: relative;
+    height: min-content; */
   }
 `
 
@@ -257,7 +258,7 @@ const Layout = ({ children, location: { pathname, hash }, location }) => {
       </ShellBox>
       {/* { visible && <AnimatedLogo/> } */}
       <App>
-        <AlmaLogo src={almaLogo} alt='The Alma Logo'/>
+        {/* <AlmaLogo src={almaLogo} alt='The Alma Logo'/> */}
         <Menu>
           <Logo/>
           <Navigation/>

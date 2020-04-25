@@ -37,23 +37,10 @@ const Restaurants = ({ data }) => {
         <Arrow/>
       </Box>
 
-      <P center>{t({ id: 'restaurants-paragraph-1' })}</P>
-
-      <Box full image>
-        <Image rounded fluid={data.almagarden1desktop.childImageSharp.fluid}/>
-        <Caption medium>Actual Image</Caption>
-        <Watermark medium/>
+      <Box center grid space={'2'}>
+        <AlmaHeader white title={t({ id: 'asiana-heading'})}/>
+        <P>{t({ id: 'asiana-paragraph' })}</P>
       </Box>
-
-      <P center>{t({ id: 'restaurants-paragraph-2' })}</P>
-
-      <Box full image>
-        <Image rounded fluid={data.atlantis1desktop.childImageSharp.fluid}/>
-        <Caption medium>Actual Image</Caption>
-        <Watermark medium/>
-      </Box>
-
-      <P center>{t({ id: 'restaurants-paragraph-3' })}</P>
 
       <Box full image>
         <Image rounded fluid={data.asiana2desktop.childImageSharp.fluid}/>
@@ -61,7 +48,10 @@ const Restaurants = ({ data }) => {
         <Watermark medium/>
       </Box>
 
-      <P center>{t({ id: 'restaurants-paragraph-4' })}</P>
+      <Box center grid space={'2'}>
+        <AlmaHeader white title={t({ id: 'la-casa-heading'})}/>
+        <P>{t({ id: 'la-casa-paragraph' })}</P>
+      </Box>
 
       <Box full image>
         <Image rounded fluid={data.lacasarender.childImageSharp.fluid}/>
@@ -69,7 +59,21 @@ const Restaurants = ({ data }) => {
         <Watermark medium/>
       </Box>
 
-      <P center>{t({ id: 'restaurants-paragraph-5' })}</P>
+      <Box center grid space={'2'}>
+        <AlmaHeader white title={t({ id: 'atlantis-heading'})}/>
+        <P>{t({ id: 'atlantis-paragraph' })}</P>
+      </Box>
+
+      <Box full image>
+        <Image rounded fluid={data.atlantis1desktop.childImageSharp.fluid}/>
+        <Caption medium>Actual Image</Caption>
+        <Watermark medium/>
+      </Box>
+
+      <Box center grid space={'2'}>
+        <AlmaHeader white title={t({ id: 'food-court-heading'})}/>
+        <P>{t({ id: 'food-court-paragraph' })}</P>
+      </Box>
 
       <Box full image>
         <Image rounded fluid={data.foodcourt1desktop.childImageSharp.fluid}/>
@@ -77,7 +81,11 @@ const Restaurants = ({ data }) => {
         <Watermark medium/>
       </Box>
 
-      <P center>{t({ id: 'restaurants-paragraph-6' })}</P>
+      <Box full image>
+        <Image rounded fluid={data.almagarden1desktop.childImageSharp.fluid}/>
+        <Caption medium>Actual Image</Caption>
+        <Watermark medium/>
+      </Box>
 
       <Box full image>
         <Image rounded fluid={data.americanbar1desktop.childImageSharp.fluid}/>

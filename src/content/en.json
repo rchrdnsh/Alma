@@ -20,7 +20,7 @@
   "close-button": "Close",
 
   "instagram-paragraph": "View and share your own #AlmaVacations photos, videos and memorable moments.",
-  "copyright-notice": "© Copyright 2019, Alma USA LLC. All rights reserved.",
+  "copyright-notice": "© Copyright 2019, Alma USA, Inc. All rights reserved.",
   "solicitation-notice": "This website is being used for the purpose of soliciting the sale of timeshare interests.",
 
   "resort-title": "The Resort",
@@ -95,14 +95,16 @@
 
   "restaurants-title": "Restaurants",
   "restaurants-subtitle": "",
-  "restaurants-intro-paragraph": "Your accommodations at the resort are only the beginning of this magical oasis of tranquility, as the grounds are also filled with beautiful and diverse world class restaurants that can satisfy any craving that you may have at any time of the day or night.",
-
-  "restaurants-paragraph-1": "The all day diner is the main restaurant of the resort and will serve only the best fare from around the world and aims to meet your most common cravings when you have them.",
-  "restaurants-paragraph-2": "There is a lovely bar and grill by the beach for those times when you want a little bit of sun and surf with your meal or drink.",
-  "restaurants-paragraph-3": "The asian themed restaurant will feature signature dishes from around the continent to satisfy even the most discerning patron.",
-  "restaurants-paragraph-4": "The Italian restaurant will specialize in cured meats, fresh pastas and pizzas and the most delicate and complex cheeses directly from Italy.",
-  "restaurants-paragraph-5": "The food court will be filled with all sorts of interesting and compelling offerings from around the world, including local fare from installed food trucks, offering authentic street food and drinks.",
-  "restaurants-paragraph-6": "The Pub will specialize in exotic and original crafted cocktails featuring fresh local ingredients and novel serving techniques, bringing flare and artistry to your thirst.",
+  "restaurants-intro-paragraph": "They say to travel is to eat, and to eat is to explore the world. Alma Resort wants our vacation owners to be able to taste international flavors without having to go beyond our doors. Alma Resorts offers 14 restaurants and bars with beautiful ocean views. Here are some gems we are particularly proud of.",
+  
+  "asiana-heading": "Asiana - Japanese Restaurant",
+  "asiana-paragraph": "This beautiful and spacious restaurant serves authentic Japanese cuisine curated by head chef Fukuda Takanori. Asiana introduces many delectable dishes such as wagyu beef, abalones, scallops, cods, and local Japanese wines like sake and whiskey. Diners can watch the chefs cook live, as they prepare grilled meat, sushi and sashimi with perfect precision and skills.",
+  "la-casa-heading": "La Casa - Italian Restaurant",
+  "la-casa-paragraph": "With an open kitchen concept and a romantic atmosphere with soft lighting, talented Italian chef Francesco Conzattu skilfully mixed local organic ingredients with Italian imports to create authentic dishes such as Neapolitan pizza, and classic lasagna. The pastas are made fresh by hand, and the crunchy breads are oven baked fresh, to be accompanied by famous wines.",
+  "atlantis-heading": "Atlantis - Beach Seafood Restaurant",
+  "atlantis-paragraph": "This blue themed restaurant makes you feel as if you are in the Mediterranean. Atlantis serves light fares such as salads, grilled meat and grilled fresh seafood. Guests can view the gorgeous beach while sipping a glass of premium wine and enjoy a delicious lobster dish.",
+  "food-court-heading": "Alma Food Court",
+  "food-court-paragraph": "The Alma Food Court has 6 mobile counters, from the An Nam with authentic Vietnamese dishes, to the Burger House on wheels, to the Chicken ‘n Go fried counter, to the Three Scoops gelato, also including a French bakery and an espresso bar offering coffee, tea and fresh juice.",
   
   "restaurants-list": "Restaurants, Bars & Lounges",
   "restaurant-1": "Alma Garden - All Day Dining",
@@ -153,6 +155,13 @@
   "news-title": "News",
   "news-subtitle": "",
   "news-intro-paragraph": "Check in here to keep up to date with all of the latest news about Alma.",
+
+  "april-title": "April",
+  "april-paragraph-1": "In the midst of a rapidly changing world, now is the time to appreciate the people around us, to devote our love and to create lasting memories with dear ones, more than ever.",
+  "april-paragraph-2": "Spring is around the corner, and the weather couldn’t be more perfect to indulge that travel yearn, that voice beckoning us to experience the best that life has to offer. The spring sunrise and sunset at Alma Resort are most majestic and radiant, as many vacation owners have been telling us through their Instagram and Facebook photos and stories. They have also been raving about the delicious culinary offerings at our resort. Amazing food is something we are particularly proud of. All these things are telling us that you are experiencing that feeling of luxury, comfort and happiness at Alma.",
+  "april-paragraph-3": "Alma’s mandate has always been to be socially and environmentally responsible, as we aim not only to provide you and your family with the most luxurious vacation ownership experience, we want to do it in a way that promotes harmony in this circle of life. Have you noticed that Alma lights up a heart-shape message at night to show our solidarity with the world? Have you noticed how our resort is operating with the utmost care for the environment? We care. It is as simple as that. We truly care.",
+  "april-paragraph-4": "And remember whatever happens in life, the experiences and the memories you create at Alma will withstand the test of time. Your treasures are kept safe within this paradise. May you be well and healthy.",
+  "april-paragraph-5": "May you be well and healthy.",
 
   "march-title": "March",
   "march-intro-paragraph": "They say to travel is to eat, and to eat is to explore the world. Alma Resort wants our vacation owners to be able to taste international flavours without having to go beyond our doors. Alma Resorts offers 14 restaurants and bars with beautiful ocean views. Here are some gems we are particularly proud of:",

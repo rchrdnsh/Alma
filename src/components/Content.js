@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
+  height: min-content;
   margin: 0;
   padding: 0;
   z-index: 1;
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+CjxyZWN0IHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgZmlsbD0iI2ZmZmZmZiI+PC9yZWN0Pgo8cmVjdCB4PSIxNSIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjZmRmZGZkIj48L3JlY3Q+Cjwvc3ZnPg==");
   background-repeat: repeat;
   display: grid;
-  grid-template-rows: auto;
+  /* grid-template-rows: auto; */
   grid-template-columns: 
     minmax(1rem, 1fr) 
     minmax(1rem, 45rem) 

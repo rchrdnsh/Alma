@@ -52,6 +52,14 @@ const News = ({ data }) => {
         <Arrow/>
       </Box>
 
+      <AlmaHeader center blue title={t({ id: 'april-title' })}/>
+
+      <P center>{t({ id: 'april-paragraph-1' })}</P>
+      <P center>{t({ id: 'april-paragraph-2' })}</P>
+      <P center>{t({ id: 'april-paragraph-3' })}</P>
+      <P center>{t({ id: 'april-paragraph-4' })}</P>
+      <P center>{t({ id: 'april-paragraph-5' })}</P>
+
       <AlmaHeader center blue title={t({ id: 'march-title' })}/>
 
       <P center>{t({ id: 'march-intro-paragraph' })}</P>
