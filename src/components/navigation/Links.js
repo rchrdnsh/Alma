@@ -85,8 +85,8 @@ const Links = ({toggle}) => {
       <AlmaLink to={`/vacations`} onClick={toggle}>{t({ id: "nav-vacations" })}</AlmaLink>
       <AlmaBulletShell src={almaShell}/>
       <AlmaLink to={`/alma`} onClick={toggle}>{t({ id: "nav-about-alma" })}</AlmaLink>
-      <AlmaBulletShell src={almaShell}/>
-      <AlmaLink to={`/showroom`} onClick={toggle}>{t({ id: "nav-showroom" })}</AlmaLink>
+      {/* <AlmaBulletShell src={almaShell}/>
+      <AlmaLink to={`/showroom`} onClick={toggle}>{t({ id: "nav-showroom" })}</AlmaLink> */}
       {/* <AlmaBulletShell src={almaShell}/>
       <AlmaLink to={`/careers`} onClick={toggle}>Careers</AlmaLink> */}
     </>
