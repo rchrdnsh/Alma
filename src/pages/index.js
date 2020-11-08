@@ -928,7 +928,7 @@ const Index = ({ data }) => {
         </NewsContainer>
       </Box> */}
         
-      <Box center>
+      {/* <Box center>
         <AlmaHeader blue title='Instagram' />
         <P>{t({ id: "instagram-paragraph" })}</P>
       </Box>
@@ -947,7 +947,7 @@ const Index = ({ data }) => {
             </InstaPost>
           ))}
         </InstaGrid>
-      </Box>
+      </Box> */}
 
       <Footer/>
 
@@ -957,36 +957,36 @@ const Index = ({ data }) => {
 
 export const query = graphql`
   query {
-    allInstaNode(sort: { fields: [timestamp], order: DESC }) {
-      edges {
-        node {
-          id
-          likes
-          comments
-          mediaType
-          preview
-          original
-          timestamp
-          caption
-          localFile {
-            childImageSharp {
-              fluid(maxWidth: 256) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          thumbnails {
-            src
-            config_width
-            config_height
-          }
-          dimensions {
-            height
-            width
-          }
-        }
-      }
-    }
+    # allInstaNode(sort: { fields: [timestamp], order: DESC }) {
+    #   edges {
+    #     node {
+    #       id
+    #       likes
+    #       comments
+    #       mediaType
+    #       preview
+    #       original
+    #       timestamp
+    #       caption
+    #       localFile {
+    #         childImageSharp {
+    #           fluid(maxWidth: 256) {
+    #             ...GatsbyImageSharpFluid
+    #           }
+    #         }
+    #       }
+    #       thumbnails {
+    #         src
+    #         config_width
+    #         config_height
+    #       }
+    #       dimensions {
+    #         height
+    #         width
+    #       }
+    #     }
+    #   }
+    # }
     resort1: file(relativePath: { eq: "resort/resort-1-3x2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 3240) {
