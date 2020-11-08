@@ -51,8 +51,8 @@ const Footer = () => {
       <P>{t({ id: "copyright-notice" })}</P>
       <P>{t({ id: "solicitation-notice" })}</P>
       <P>Contact Us:</P>
-      <P>1.714.689.8554</P>
-      <P>575 Anton Blvd Suite 650 Costa Mesa, CA 92626</P>
+      <P>1.657.329.0139</P>
+      <P>21034 PCH space C220 (2nd floor), Huntington Beach, CA 82648</P>
     </Container>
   )
 }
